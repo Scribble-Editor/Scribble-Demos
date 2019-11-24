@@ -25,15 +25,15 @@ def convertToLetter(v):
         return ' '
     
 def printRow(x, y, z):
-    print('\t {0:3} | {1:3} | {2:3} '.format(convertToLetter(x), convertToLetter(y), 
+    print('{0:3} | {1:3} | {2:3} '.format(convertToLetter(x), convertToLetter(y), 
           convertToLetter(z)))
     
 #need to fix print board layout    
 def print_board(board):
     printRow(board[1], board[2], board[3])
-    print('\t-----------------'.center(10))
+    print('-----------------'.center(10))
     printRow(board[4], board[5], board[6])
-    print('\t-----------------'.center(10))
+    print('-----------------'.center(10))
     printRow(board[7], board[8], board[9])
 
 def makeMove(player, pos, board):
